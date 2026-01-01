@@ -1,0 +1,53 @@
+*{box-sizing:border-box;font-family:Poppins,Arial}
+body{margin:0;background:#020617;color:#e5e7eb}
+
+nav{
+  display:flex;justify-content:space-between;align-items:center;
+  background:#030712;padding:15px 25px;position:sticky;top:0;
+  border-bottom:1px solid #1f2937
+}
+.logo{margin:0}
+nav ul{display:flex;gap:18px;list-style:none;margin:0}
+nav a{text-decoration:none;color:#e5e7eb;transition:.2s}
+nav a.active,nav a:hover{color:#38bdf8}
+
+.hero{
+  text-align:center;margin-top:100px;padding:0 20px
+}
+.hero h1{font-size:48px;margin:8px 0}
+.hero h1 span{color:#38bdf8}
+button{
+  padding:12px 20px;border:none;border-radius:10px;
+  background:#2563eb;color:white;cursor:pointer;font-size:16px;
+  box-shadow:0 10px 25px rgba(37,99,235,.3);
+  transition:.25s
+}
+button:hover{transform:translateY(-2px);background:#1d4ed8}
+
+/* animations */
+.fade{animation:fadein 1.5s ease}
+.slide{animation:slideup 1.3s ease}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes slideup{from{transform:translateY(25px);opacity:0}
+to{transform:translateY(0);opacity:1}}
+
+/* content pages */
+.content{max-width:900px;margin:40px auto;padding:0 20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{
+  background:#030712;padding:18px;border-radius:14px;
+  border:1px solid #1f2937;transition:.25s
+}
+.card:hover{transform:translateY(-3px);border-color:#38bdf8}
+
+/* forms */
+.form-box{max-width:400px;margin:80px auto;text-align:center}
+input,textarea{
+  width:100%;padding:10px;margin:8px 0;border-radius:10px;border:none;
+  background:#0f172a;color:#e5e7eb
+}
+textarea{height:120px}
+
+@media(max-width:700px){
+  .hero h1{font-size:34px}
+}
