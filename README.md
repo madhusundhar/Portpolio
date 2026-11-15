@@ -183,20 +183,29 @@ For a Vite project, the typical configuration is:
 
 See the [Netlify Vite deployment documentation](https://docs.netlify.com/build/frameworks/framework-setup-guides/vite/).
 
+
 ## 📬 Connect With Me
 
-| Platform | Link |
-|---|---|
-| Portfolio | [madhusundharan.netlify.app](https://madhusundharan.netlify.app/) |
-| GitHub | [madhusundhar](https://github.com/madhusundhar) |
-| LinkedIn | [Madhusundharan P](https://www.linkedin.com/in/madhusundharan-p-5082402a6/) |
-| LeetCode | [madhusundhar](https://leetcode.com/u/madhusundhar/) |
-| Email | [madhusundhar28@gmail.com](mailto:madhusundhar28@gmail.com) |
-
----
+<p align="center">
+  <a href="https://madhusundharan.netlify.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-Visit%20Website-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white" />
+  </a>
+  <a href="https://github.com/madhusundhar" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-Follow%20Me-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/madhusundharan-p-5082402a6/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://leetcode.com/u/madhusundhar/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-View%20Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
+  </a>
+  <a href="mailto:madhusundhar28@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Say%20Hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
 
 <p align="center">
-  <strong>Beyond the Code. Building, Learning, and Growing.</strong>
+  <i>💬 Always open to interesting conversations, collaborations, and opportunities!</i>
 </p>
 
 <p align="center">
