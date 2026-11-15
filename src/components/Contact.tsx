@@ -7,7 +7,7 @@ import {
   Code2, 
   Phone, 
   MapPin, 
-  Sparkles,
+  Sparkles, 
   FileText,
   ExternalLink
 } from 'lucide-react';
@@ -15,7 +15,11 @@ import confetti from 'canvas-confetti';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { GithubIcon, LinkedinIcon } from './Icons';
 
-export const Contact: React.FC = () => {
+interface ContactProps {
+  onResumeClick: () => void;
+}
+
+export const Contact: React.FC<ContactProps> = ({ onResumeClick }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -177,10 +181,15 @@ export const Contact: React.FC = () => {
               <div className="flex items-center gap-2">
                 <a
                   href={PERSONAL_INFO.resumeUrl}
-                  download="Madhusundharan_P_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onResumeClick();
+                  }}
                   className="px-4 py-2 rounded-full text-xs font-semibold text-white bg-stone-900 hover:bg-stone-800 transition-colors shadow-xs"
                 >
-                  Download
+                  View Resume
                 </a>
                 <a
                   href={PERSONAL_INFO.driveResumeUrl}

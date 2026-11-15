@@ -4,9 +4,10 @@ import { PERSONAL_INFO } from '../data/portfolioData';
 
 interface NavbarProps {
   activeSection: string;
+  onResumeClick: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
+export const Navbar: React.FC<NavbarProps> = ({ activeSection, onResumeClick }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -111,7 +112,12 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
             <div className="flex items-center gap-3">
               <a
                 href={PERSONAL_INFO.resumeUrl}
-                download="Madhusundharan_P_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onResumeClick();
+                }}
                 className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-stone-900 bg-white hover:bg-stone-50 border border-stone-200 rounded-full transition-all duration-200 shadow-xs hover:border-stone-400 group"
               >
                 <FileText className="w-3.5 h-3.5 text-stone-600 group-hover:text-stone-900" />
@@ -160,11 +166,17 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
             <div className="pt-3 mt-2 border-t border-black/[0.06]">
               <a
                 href={PERSONAL_INFO.resumeUrl}
-                download="Madhusundharan_P_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setMobileMenuOpen(false);
+                  onResumeClick();
+                }}
                 className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-white bg-stone-900 rounded-xl"
               >
                 <FileText className="w-4 h-4" />
-                <span>Download Resume</span>
+                <span>View Resume</span>
               </a>
             </div>
           </div>

@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { 
   ArrowRight, 
-  Download, 
-  Code2, 
-  Mail, 
   MapPin,
   ChevronDown,
-  Sparkles
+  Sparkles,
+  FileText
 } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { GithubIcon, LinkedinIcon } from './Icons';
+import { Code2, Mail } from 'lucide-react';
 
-export const Hero: React.FC = () => {
+interface HeroProps {
+  onResumeClick: () => void;
+}
+
+export const Hero: React.FC<HeroProps> = ({ onResumeClick }) => {
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -101,7 +104,7 @@ export const Hero: React.FC = () => {
 
             {/* Headline statement & Introduction */}
             <div className="space-y-4 max-w-2xl border-l-2 border-stone-300 pl-5">
-              <p className="font-serif italic text-2xl sm:text-3xl text-stone-900 leading-snug">
+              <p className="font-serif italic text-2xl sm:text-3xl text-stone-950 leading-snug">
                 "{PERSONAL_INFO.headline}"
               </p>
               <p className="text-base sm:text-lg text-stone-600 leading-relaxed font-normal">
@@ -122,11 +125,16 @@ export const Hero: React.FC = () => {
 
               <a
                 href={PERSONAL_INFO.resumeUrl}
-                download="Madhusundharan_P_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onResumeClick();
+                }}
                 className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full text-sm font-semibold text-stone-900 bg-white hover:bg-stone-100 border border-stone-300 hover:border-stone-500 transition-all duration-200 transform hover:-translate-y-0.5 shadow-xs group focus:outline-none"
               >
-                <Download className="w-4 h-4 text-stone-600 group-hover:scale-110 transition-transform" />
-                <span>Download Resume</span>
+                <FileText className="w-4 h-4 text-stone-600 group-hover:scale-110 transition-transform" />
+                <span>View Resume</span>
               </a>
             </div>
 

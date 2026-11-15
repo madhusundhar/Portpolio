@@ -11,9 +11,11 @@ import { GitHubSection } from './components/GitHubSection';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { CustomCursor } from './components/CustomCursor';
+import { ResumeModal } from './components/ResumeModal';
 
 export const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
 
   useEffect(() => {
     const sectionIds = [
@@ -54,11 +56,14 @@ export const App: React.FC = () => {
       <CustomCursor />
 
       {/* Modern Minimal Navigation */}
-      <Navbar activeSection={activeSection} />
+      <Navbar 
+        activeSection={activeSection} 
+        onResumeClick={() => setIsResumeOpen(true)}
+      />
 
       {/* Main Content Sections */}
       <main id="main-content">
-        <Hero />
+        <Hero onResumeClick={() => setIsResumeOpen(true)} />
         <About />
         <Skills />
         <Projects />
@@ -66,11 +71,17 @@ export const App: React.FC = () => {
         <BeyondCode />
         <Certifications />
         <GitHubSection />
-        <Contact />
+        <Contact onResumeClick={() => setIsResumeOpen(true)} />
       </main>
 
       {/* Footer */}
       <Footer />
+
+      {/* Interactive Resume PDF Viewer Modal */}
+      <ResumeModal
+        isOpen={isResumeOpen}
+        onClose={() => setIsResumeOpen(false)}
+      />
     </div>
   );
 };
