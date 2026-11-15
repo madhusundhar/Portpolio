@@ -1,141 +1,204 @@
-# Madhusundharan P — Interactive Developer Portfolio
+# Madhusundharan P | Personal Portfolio
 
-> A premium, dark-cinematic, interactive portfolio built with **React 19**, **Vite**, **TypeScript**, **Tailwind CSS v4**, and **Three.js**.
+<p align="center">
+  <a href="https://madhusundharan.netlify.app/">
+    <img src="https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Website-111111?style=for-the-badge" alt="Live Portfolio"/>
+  </a>
+</p>
 
-[![React](https://img.shields.io/badge/React-19.3-61DAFB?logo=react&logoColor=black)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-7.0-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
-[![Three.js](https://img.shields.io/badge/Three.js-WebGL-black?logo=three.js)](https://threejs.org/)
+<p align="center">
+  <strong>A personal portfolio showcasing my developer journey, technical skills, projects, experience, and interests.</strong>
+</p>
 
----
-
-## 🌟 Key Highlights & Design Direction
-
-- **Dark Cinematic Aesthetic**: Near-black background (`#07080d`), electric violet (`#8B5CF6`), deep indigo, and cyan (`#06B6D4`) gradient lighting.
-- **Interactive 3D Centerpiece**: High-performance Three.js wireframe icosahedron with inner glowing core, orbital rings, and dynamic particle starfield that reacts smoothly to cursor movement.
-- **Live GitHub Integration**: Direct connection with GitHub REST API displaying public repositories (`URL-Shortener-with-Analytics`, `JAVA`, `leetcode-problems`, etc.) with resilient fallback caching.
-- **Project Showcase & Deep-Dive Modals**: Domain-specific abstract SVG graphics, tech tags, verifiable GitHub repository links, and comprehensive architectural specs.
-- **Filterable Technical Skills**: Clean skill matrix across Programming, Frontend, Backend, Cloud & Databases, AI/DS, and Developer Tools without artificial percentages.
-- **Interactive Experience & Education Timeline**: Neural Arc Global internship timeline, Karpagam Academy B.Tech, and Sri Ramakrishna Mission Polytechnic background.
-- **Direct Resume Access**: Direct local download (`/resume.pdf`) and Google Drive folder link.
-- **Fully Responsive & Accessible**: Mobile-first layout, custom cursor on desktop (fine-pointer only), scroll progress indicator, and `prefers-reduced-motion` compliance.
+<p align="center">
+  <a href="https://github.com/madhusundhar">GitHub</a> •
+  <a href="https://www.linkedin.com/in/madhusundharan-p-5082402a6/">LinkedIn</a> •
+  <a href="https://leetcode.com/u/madhusundhar/">LeetCode</a>
+</p>
 
 ---
 
-## 🚀 Getting Started Locally
+## 👋 About Me
+
+Hello! I'm **Madhusundharan P**, an aspiring Software Developer and B.Tech Artificial Intelligence & Data Science student at Karpagam Academy of Higher Education.
+
+I'm passionate about software development, full-stack applications, artificial intelligence, and building technology that solves real-world problems.
+
+Beyond coding, I enjoy football, cricket, gaming, and continuously exploring new technologies.
+
+## 🌐 Live Website
+
+**Portfolio:** https://madhusundharan.netlify.app/
+
+This website serves as my digital identity, bringing together my technical journey, personal interests, projects, education, and professional experience.
+
+## ✨ Portfolio Features
+
+- **Personal Introduction:** Learn about my background, interests, and career aspirations.
+- **Technical Skills:** Explore my programming languages, frameworks, databases, and development tools.
+- **Project Showcase:** Discover my development projects and the technologies behind them.
+- **Professional Journey:** Explore my education, internship experience, and achievements.
+- **Certifications:** View my technical certifications and learning accomplishments.
+- **Personal Interests:** Discover my passion for football, cricket, gaming, and technology.
+- **Social Connections:** Direct links to my GitHub, LinkedIn, and LeetCode profiles.
+- **Resume Access:** Quick access to my professional resume.
+- **Responsive Experience:** Designed to provide a consistent experience across desktop, tablet, and mobile devices.
+
+## 🛠️ Technical Skills
+
+| Category | Technologies |
+|---|---|
+| Programming | Java, C++, Python, JavaScript |
+| Frontend | HTML, CSS, React, Tailwind CSS |
+| Backend | Node.js, Express.js, Django, FastAPI |
+| Databases | MySQL, MongoDB, Firebase, Firestore |
+| Cloud | Google Cloud, Cloud Run |
+| AI & Data Science | Machine Learning, Gemini API, Data Visualization |
+| Tools | Git, GitHub, VS Code, Power BI |
+
+## 🚀 Featured Projects
+
+### AI-Powered Fitness & Wellness Platform
+A full-stack fitness platform integrating AI-powered recommendations, authentication, cloud data storage, and backend services.
+
+**Technologies:** React, Vite, Tailwind CSS, Python, FastAPI, Firebase, Firestore, Gemini API, Google Cloud Run.
+
+### IoT-Based Smart Home System
+An IoT home automation system featuring voice control, remote appliance monitoring, connected devices, and a mobile dashboard.
+
+**Technologies:** ESP32/Arduino, MQTT, Firebase, ThingSpeak.
+
+### ERP-Based Student Document Management System
+A digital document management platform designed for students, HODs, and administrators, featuring role-based access, document tracking, and approval workflows.
+
+**Technologies:** HTML, CSS, JavaScript, Python, Django, MySQL, REST APIs.
+
+### URL Shortener with Analytics
+A full-stack application for shortening URLs and tracking link activity.
+
+**Repository:** [View on GitHub](https://github.com/madhusundhar/URL-Shortener-with-Analytics)
+
+## 💼 Experience
+
+**Full Stack Intern — Neural Arc Global Pvt Ltd**
+
+April 28, 2025 – May 16, 2025
+
+- Worked with Python, Django, and web technologies.
+- Gained practical exposure to full-stack application development.
+
+## 🎓 Education
+
+- **B.Tech Artificial Intelligence & Data Science** — Karpagam Academy of Higher Education (2024–2027).
+- **Diploma in Electrical and Electronics Engineering** — Sri Ramakrishna Mission Polytechnic College (2021–2024).
+- **Secondary Education** — Sri Sowdeswari Vidyalaya Model Metric Higher Secondary School (2021).
+
+## 🏆 Certifications & Achievements
+
+- Google Cloud Computing Certification — NPTEL.
+- Certified System Administrator — ServiceNow.
+- Certified Application Developer — ServiceNow.
+- Foundation of AI and Generative AI — Infosys Springboard.
+- Shortlisted for Smart India Hackathon.
+
+## ⚽ Beyond the Code
+
+Technology is an important part of my life, but it isn't the only thing that defines me.
+
+- **Football:** A football enthusiast who plays as a forward. Cristiano Ronaldo is my inspiration.
+- **Cricket:** Enjoy playing cricket as an opening batsman.
+- **Gaming:** Interested in BGMI and gaming.
+- **Technology:** Enjoy exploring new tools, programming, and building applications.
+
+## 💻 Tech Stack
+
+The portfolio's previous development documentation identifies the following technologies:
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS v4
+- Three.js
+
+Verify the current repository's `package.json` before treating this list as the definitive installed stack.
+
+## 🚀 Run Locally
 
 ### Prerequisites
 
-Ensure you have **Node.js 18+** installed:
+- Node.js
+- npm
+- Git
 
-```bash
-node -v
-npm -v
-```
-
-### Installation
-
-Clone the repository and install dependencies:
+### Clone the Repository
 
 ```bash
 git clone https://github.com/madhusundhar/Portpolio.git
+```
+
+### Navigate to the Project
+
+```bash
 cd Portpolio
+```
+
+### Install Dependencies
+
+```bash
 npm install
 ```
 
-### Run the Development Server
-
-Start Vite with hot module replacement:
+### Start Development Server
 
 ```bash
 npm run dev
 ```
 
-Open your browser at `http://localhost:3000`.
-
-### Production Build
-
-Compile TypeScript and build the optimized production bundle:
+### Create Production Build
 
 ```bash
 npm run build
+```
+
+### Preview Production Build
+
+```bash
 npm run preview
 ```
 
----
+## 🌍 Deployment
 
-## 📁 Project Structure
+This portfolio is hosted on **Netlify**.
 
-```
-Portpolio/
-├── public/
-│   ├── favicon.svg            # Custom SVG monogram favicon
-│   └── resume.pdf             # Verified resume PDF (528 KB)
-├── src/
-│   ├── components/
-│   │   ├── About.tsx          # Biography, philosophy & interactive terminal
-│   │   ├── Certifications.tsx # NPTEL, ServiceNow, Infosys Springboard badges
-│   │   ├── Contact.tsx        # Mail client dispatcher & confetti celebration
-│   │   ├── CustomCursor.tsx   # Desktop-only smooth cursor ring
-│   │   ├── Education.tsx      # Academic degrees & institutions
-│   │   ├── Experience.tsx     # Neural Arc Global internship timeline
-│   │   ├── Footer.tsx         # Brand monogram, quick links, copyright
-│   │   ├── GitHubSection.tsx  # GitHub API repository grid & LeetCode link
-│   │   ├── Hero.tsx           # Full-screen hero with typewriter role cycling
-│   │   ├── Hero3DCanvas.tsx   # Three.js interactive 3D centerpiece
-│   │   ├── Icons.tsx          # Clean SVG icons (GitHub, LinkedIn, etc.)
-│   │   ├── Navbar.tsx         # Sticky blurred navbar with scroll progress
-│   │   ├── ProjectModal.tsx   # Architectural specs & highlights modal
-│   │   ├── Projects.tsx       # Featured project gallery & category filters
-│   │   └── Skills.tsx         # Filterable tech skill matrix with search
-│   ├── data/
-│   │   └── portfolioData.ts   # Centralized verified profile & project data
-│   ├── types/
-│   │   └── index.ts           # TypeScript interfaces & types
-│   ├── App.tsx                # Main application layout with scroll-spy
-│   ├── index.css              # Tailwind CSS v4 directives & glassmorphism
-│   └── main.tsx               # Application entry point
-├── index.html                 # SEO meta tags, fonts, Open Graph cards
-├── package.json               # Dependencies and scripts
-├── tsconfig.json              # TypeScript configuration
-└── vite.config.ts             # Vite configuration with Tailwind CSS plugin
-```
+Live URL: https://madhusundharan.netlify.app/
+
+The project can be deployed through Netlify by connecting its GitHub repository.
+
+For a Vite project, the typical configuration is:
+
+| Configuration | Value |
+|---|---|
+| Build command | `npm run build` |
+| Publish directory | `dist` |
+
+See the [Netlify Vite deployment documentation](https://docs.netlify.com/build/frameworks/framework-setup-guides/vite/).
+
+## 📬 Connect With Me
+
+| Platform | Link |
+|---|---|
+| Portfolio | [madhusundharan.netlify.app](https://madhusundharan.netlify.app/) |
+| GitHub | [madhusundhar](https://github.com/madhusundhar) |
+| LinkedIn | [Madhusundharan P](https://www.linkedin.com/in/madhusundharan-p-5082402a6/) |
+| LeetCode | [madhusundhar](https://leetcode.com/u/madhusundhar/) |
+| Email | [madhusundhar28@gmail.com](mailto:madhusundhar28@gmail.com) |
 
 ---
 
-## 🌐 Deployment Guide
+<p align="center">
+  <strong>Beyond the Code. Building, Learning, and Growing.</strong>
+</p>
 
-### Deploying to Vercel (Recommended)
-
-1. Push your latest code to GitHub:
-   ```bash
-   git add .
-   git commit -m "feat: complete interactive developer portfolio"
-   git push origin main
-   ```
-2. Go to [Vercel](https://vercel.com/) and sign in with your GitHub account.
-3. Click **"Add New..."** -> **"Project"** and select `Portpolio`.
-4. Framework Preset will be automatically detected as **Vite**.
-5. Build Command: `npm run build`
-6. Output Directory: `dist`
-7. Click **"Deploy"**. Your portfolio will be live in under 60 seconds with SSL and global CDN!
-
-### Custom Domain on Vercel
-
-1. In your Vercel project dashboard, navigate to **Settings** -> **Domains**.
-2. Enter your custom domain (e.g. `madhusundharan.dev` or `madhu.codes`).
-3. Follow the DNS instructions to add a `CNAME` or `A` record with your domain registrar.
-
----
-
-## 📬 Contact & Socials
-
-- **Developer**: Madhusundharan P
-- **Email**: [madhusundhar28@gmail.com](mailto:madhusundhar28@gmail.com)
-- **LinkedIn**: [linkedin.com/in/madhusundharan-p-5082402a6/](https://www.linkedin.com/in/madhusundharan-p-5082402a6/)
-- **GitHub**: [github.com/madhusundhar](https://github.com/madhusundhar)
-- **LeetCode**: [leetcode.com/u/madhusundhar/](https://leetcode.com/u/madhusundhar/)
-
----
-*Built with passion, performance, and attention to detail.*
+<p align="center">
+  © 2026 Madhusundharan P
+</p>
