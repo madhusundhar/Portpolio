@@ -8,7 +8,6 @@ export const CustomCursor: React.FC = () => {
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
-    // Only enable on fine pointer desktop devices and not reduced-motion
     const finePointer = window.matchMedia('(pointer: fine)').matches;
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!finePointer || reducedMotion) return;
@@ -45,7 +44,6 @@ export const CustomCursor: React.FC = () => {
     };
   }, []);
 
-  // Trailing ring animation
   useEffect(() => {
     if (!isDesktop) return;
 
@@ -65,21 +63,21 @@ export const CustomCursor: React.FC = () => {
   if (!isDesktop || !isVisible) return null;
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-50 overflow-hidden">
-      {/* Central pinpoint dot */}
+    <div className="pointer-events-none fixed inset-0 z-50 overflow-hidden mix-blend-difference">
+      {/* Central dot */}
       <div
-        className={`fixed top-0 left-0 w-2 h-2 rounded-full bg-cyan-400 transition-opacity duration-150 ${
-          isPointer ? 'scale-150 bg-violet-400' : 'scale-100'
+        className={`fixed top-0 left-0 w-2 h-2 rounded-full bg-white transition-opacity duration-150 ${
+          isPointer ? 'scale-150' : 'scale-100'
         }`}
         style={{
           transform: `translate3d(${position.x - 4}px, ${position.y - 4}px, 0)`
         }}
       />
 
-      {/* Smooth trailing glow ring */}
+      {/* Smooth trailing ring */}
       <div
-        className={`fixed top-0 left-0 rounded-full border border-violet-400/40 bg-violet-500/[0.04] transition-all duration-100 ease-out ${
-          isPointer ? 'w-10 h-10 border-cyan-400/60 scale-125' : 'w-7 h-7'
+        className={`fixed top-0 left-0 rounded-full border border-white transition-all duration-100 ease-out ${
+          isPointer ? 'w-10 h-10 scale-125' : 'w-7 h-7'
         }`}
         style={{
           transform: `translate3d(${trailingPosition.x - (isPointer ? 20 : 14)}px, ${
@@ -90,4 +88,3 @@ export const CustomCursor: React.FC = () => {
     </div>
   );
 };
-

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Code2, Mail, Heart } from 'lucide-react';
+import { ArrowUp, Code2, Mail } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { GithubIcon, LinkedinIcon } from './Icons';
 
@@ -12,35 +12,33 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="relative bg-[#05060a] border-t border-white/[0.06] pt-16 pb-12 overflow-hidden">
+    <footer className="bg-stone-950 text-stone-300 py-16 border-t border-black/[0.08]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-white/[0.06]">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-stone-800">
           
           {/* Brand info */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-2">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-violet-600 to-cyan-500 p-[1px] flex items-center justify-center">
-                <div className="w-full h-full bg-[#090b14] rounded-[11px] flex items-center justify-center text-xs font-bold text-violet-300 font-mono">
-                  MP
-                </div>
+              <div className="w-8 h-8 rounded-full bg-white text-stone-950 flex items-center justify-center font-mono text-xs font-bold">
+                MP
               </div>
-              <span className="text-base font-bold text-white tracking-tight">
+              <span className="text-base font-bold text-white tracking-tight uppercase">
                 {PERSONAL_INFO.name}
               </span>
             </div>
-            <p className="text-xs text-slate-400 max-w-sm">
-              Aspiring Software Developer & AI/DS Engineer passionate about building scalable, high-impact digital experiences.
+            <p className="text-xs text-stone-400 max-w-sm">
+              Aspiring Software Developer & AI/DS Engineer passionate about building practical, impactful digital applications.
             </p>
           </div>
 
-          {/* Social Links */}
+          {/* Social Links & Back to Top */}
           <div className="flex items-center gap-3">
             <a
               href={PERSONAL_INFO.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] text-slate-400 hover:text-white border border-white/[0.06] hover:border-violet-500/40 transition-colors"
+              className="p-2.5 rounded-full bg-stone-900 hover:bg-stone-800 text-stone-300 hover:text-white border border-stone-800 transition-colors"
               title="GitHub"
               aria-label="GitHub Profile"
             >
@@ -51,7 +49,7 @@ export const Footer: React.FC = () => {
               href={PERSONAL_INFO.linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] text-slate-400 hover:text-white border border-white/[0.06] hover:border-violet-500/40 transition-colors"
+              className="p-2.5 rounded-full bg-stone-900 hover:bg-stone-800 text-stone-300 hover:text-white border border-stone-800 transition-colors"
               title="LinkedIn"
               aria-label="LinkedIn Profile"
             >
@@ -62,7 +60,7 @@ export const Footer: React.FC = () => {
               href={PERSONAL_INFO.leetcodeUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] text-slate-400 hover:text-amber-400 border border-white/[0.06] hover:border-amber-500/40 transition-colors"
+              className="p-2.5 rounded-full bg-stone-900 hover:bg-stone-800 text-stone-300 hover:text-amber-400 border border-stone-800 transition-colors"
               title="LeetCode"
               aria-label="LeetCode Profile"
             >
@@ -71,7 +69,7 @@ export const Footer: React.FC = () => {
 
             <a
               href={`mailto:${PERSONAL_INFO.email}`}
-              className="p-2.5 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] text-slate-400 hover:text-cyan-400 border border-white/[0.06] hover:border-cyan-500/40 transition-colors"
+              className="p-2.5 rounded-full bg-stone-900 hover:bg-stone-800 text-stone-300 hover:text-rose-400 border border-stone-800 transition-colors"
               title="Email"
               aria-label="Email"
             >
@@ -82,7 +80,7 @@ export const Footer: React.FC = () => {
             <button
               type="button"
               onClick={scrollToTop}
-              className="p-2.5 rounded-xl bg-violet-600/20 hover:bg-violet-600/30 text-violet-300 border border-violet-500/40 transition-colors ml-2"
+              className="p-2.5 rounded-full bg-stone-800 hover:bg-stone-700 text-white transition-colors ml-2"
               title="Scroll back to top"
               aria-label="Back to top"
             >
@@ -93,12 +91,10 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom copyright & attribution */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
           <p>© {new Date().getFullYear()} {PERSONAL_INFO.name}. All rights reserved.</p>
-          <p className="flex items-center gap-1.5 font-mono text-[11px]">
-            <span>Crafted with</span>
-            <Heart className="w-3 h-3 text-rose-500 fill-rose-500" />
-            <span>React • Vite • TypeScript • Tailwind</span>
+          <p className="font-mono text-[11px] text-stone-500">
+            Coimbatore, Tamil Nadu, India • B.Tech AI & Data Science
           </p>
         </div>
 

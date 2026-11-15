@@ -4,8 +4,8 @@ import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
-import { Experience } from './components/Experience';
-import { Education } from './components/Education';
+import { Journey } from './components/Journey';
+import { BeyondCode } from './components/BeyondCode';
 import { Certifications } from './components/Certifications';
 import { GitHubSection } from './components/GitHubSection';
 import { Contact } from './components/Contact';
@@ -21,14 +21,14 @@ export const App: React.FC = () => {
       'about',
       'skills',
       'projects',
-      'experience',
-      'education',
+      'journey',
+      'beyond-code',
       'certifications',
       'contact'
     ];
 
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 220;
+      const scrollPosition = window.scrollY + 200;
 
       for (let i = sectionIds.length - 1; i >= 0; i--) {
         const section = document.getElementById(sectionIds[i]);
@@ -49,21 +49,21 @@ export const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-[#07080d] text-slate-100 selection:bg-violet-600/30 selection:text-violet-200">
-      {/* Interactive Custom Desktop Cursor */}
+    <div className="relative min-h-screen bg-[#FAF9F6] text-stone-900 selection:bg-stone-900 selection:text-white">
+      {/* Desktop Inverting Cursor */}
       <CustomCursor />
 
-      {/* Floating Modern Header */}
+      {/* Modern Minimal Navigation */}
       <Navbar activeSection={activeSection} />
 
-      {/* Main Sections */}
+      {/* Main Content Sections */}
       <main id="main-content">
         <Hero />
         <About />
         <Skills />
         <Projects />
-        <Experience />
-        <Education />
+        <Journey />
+        <BeyondCode />
         <Certifications />
         <GitHubSection />
         <Contact />

@@ -10,13 +10,12 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   isFeatured: boolean;
-  accentColor: string; // Hex or gradient
+  accentColor: string;
 }
 
 export interface SkillItem {
   name: string;
   category: 'Programming' | 'Frontend' | 'Backend & APIs' | 'Databases & Cloud' | 'Tools' | 'AI & Data Science';
-  level?: string;
   iconName?: string;
 }
 
@@ -38,11 +37,31 @@ export interface EducationItem {
   highlights?: string[];
 }
 
+export interface JourneyMilestone {
+  year: string;
+  title: string;
+  organization: string;
+  type: 'Education' | 'Internship' | 'Achievement';
+  description: string;
+  tags?: string[];
+  badge?: string;
+}
+
 export interface CertificationItem {
   title: string;
   issuer: string;
   badge?: string;
   skills: string[];
+}
+
+export interface PersonalInterest {
+  id: string;
+  title: string;
+  category: string;
+  highlight: string;
+  description: string;
+  details: string[];
+  accentColor: string;
 }
 
 export interface GitHubRepo {
@@ -54,4 +73,3 @@ export interface GitHubRepo {
   forks_count: number;
   updated_at: string;
 }
-
